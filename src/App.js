@@ -21,7 +21,7 @@ function App() {
             <p className="subtitle">by Matias</p>
           </div>
           <div className="container-2">
-            <a href="#" className="btn-text">
+            <a href="https://puginarug.com/" className="btn-text">
               <img src="chevron-down-solid.svg" alt="scroll down button" />
               Scroll
             </a>
