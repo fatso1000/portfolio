@@ -1,6 +1,8 @@
 import React from "react";
 // import Header from "./components/header";
 import "./App.css";
+import GITHUB_LOGO from "./components/GitHub-Mark-Light-120px-plus.png";
+import LINKEDIN_LOGO from "./components/linkedin-128.png";
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -21,7 +23,7 @@ function App() {
             <p className="subtitle">by Matias</p>
           </div>
           <div className="container-2">
-            <a href="https://puginarug.com/" className="btn-text">
+            <a href="#" className="btn-text">
               <img src="chevron-down-solid.svg" alt="scroll down button" />
               Scroll
             </a>
@@ -44,16 +46,62 @@ function App() {
               </bold>
               .
             </p>
-            <button onClick={() => setDarkMode(!darkMode)} className="btn-dark">
-              Dark Mode
-            </button>
+            <div className="list__social">
+              <div className="list__social-content">
+                <a href="https://www.linkedin.com/in/matias-benitez81/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="list__social-img"
+                    src={LINKEDIN_LOGO}
+                    alt="linkedin logo"
+                  ></img>
+                </a>
+                {/* <button
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="btn-dark"
+                >
+                  Dark Mode
+                </button> */}
+              </div>
+              <div className="list__social-content">
+                <a href="https://github.com/fatso1000" target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="list__social-img"
+                    src={GITHUB_LOGO}
+                    alt="github logo"
+                  ></img>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {/* PROJECTS */}
       <div className="fullsize">
         <div className="container">
           <div className="presentation-projects">
-            <h1 className="title">SOME PROJECTS</h1>
+            <h1 className="title">MY PROJECTS</h1>
+            <div className="list-container">
+              <ul>
+                <li>
+                  <p className="subtitle">
+                    <bold>xkcd project</bold> - Front-end project
+                  </p>
+                </li>
+                <li>
+                  <p className="subtitle">
+                    <bold>jodapp project</bold> - Back-end project
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ABOUT */}
+      <div className="fullsize">
+        <div className="container">
+          <div className="presentation-projects">
+            <h1 className="title">MY PROJECTS</h1>
             <div className="list-container">
               <ul>
                 <li>
