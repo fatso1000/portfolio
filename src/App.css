@@ -19,6 +19,16 @@ bold {
   border: 3px solid orange;
 } */
 
+/* LIST PROJECTS */
+.list__projects {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.list__projects-content {
+  
+}
+
 /* ETC */
 .list__social {
   display: flex;

@@ -23,7 +23,7 @@ function App() {
             <p className="subtitle">by Matias</p>
           </div>
           <div className="container-2">
-            <a href="#" className="btn-text">
+            <a href="http://corndog.io/" className="btn-text">
               <img src="chevron-down-solid.svg" alt="scroll down button" />
               Scroll
             </a>
@@ -81,18 +81,21 @@ function App() {
           <div className="presentation-projects">
             <h1 className="title">MY PROJECTS</h1>
             <div className="list-container">
-              <ul>
+              <div className="">
+                
+              </div>
+              {/* <ul>
                 <li>
-                  <p className="subtitle">
+                  <a className="subtitle">
                     <bold>xkcd project</bold> - Front-end project
-                  </p>
+                  </a>
                 </li>
                 <li>
                   <p className="subtitle">
                     <bold>jodapp project</bold> - Back-end project
                   </p>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
