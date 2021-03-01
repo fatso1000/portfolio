@@ -4,7 +4,7 @@ bold {
 }
 
 
-/* SCROLL BAR */
+/* SCROLL BAR
 *::-webkit-scrollbar {
   width: 12px;
 }
@@ -17,7 +17,7 @@ bold {
   background-color: black;
   border-radius: 20px;
   border: 3px solid orange;
-}
+} */
 
 /* GENERAL CLASSES */
 .container {
