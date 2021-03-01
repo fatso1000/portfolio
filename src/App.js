@@ -5,13 +5,13 @@ import GITHUB_LOGO from "./components/GitHub-Mark-Light-120px-plus.png";
 import LINKEDIN_LOGO from "./components/linkedin-128.png";
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(false);
+  // const [darkMode, setDarkMode] = React.useState(false);
 
-  React.useEffect(() => {
-    darkMode
-      ? document.body.classList.add("dark")
-      : document.body.classList.remove("dark");
-  }, [darkMode]);
+  // React.useEffect(() => {
+  //   darkMode
+  //     ? document.body.classList.add("dark")
+  //     : document.body.classList.remove("dark");
+  // }, [darkMode]);
 
   return (
     <>
@@ -82,7 +82,7 @@ function App() {
             <h1 className="title">MY PROJECTS</h1>
             <div className="list-container">
               <div className="">
-                
+
               </div>
               {/* <ul>
                 <li>
