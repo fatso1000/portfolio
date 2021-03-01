@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+/* ELEMENTS */
+bold {
+  font-weight: bolder;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* SCROLL BAR */
+*::-webkit-scrollbar {
+  width: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*::-webkit-scrollbar-track {
+  background: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
+
+/* GENERAL CLASSES */
+.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  height: 100%;
+}
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-container {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.presentation {
+  width: 75%;
+  background-color: black;
+  padding: 20px 12.53%;
+}
+.presentation .subtitle,
+.presentation .subtitle {
+  color: white;
+}
+.presentation .title {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.presentation-projects {
+  width: 75%;
+  padding: 20px 12.53%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ETC */
+
+/* TEXT CLASSES */
+.title {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 0;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
+
+.subtitle {
+  font-family: "Ubuntu Mono", monospace;
+  font-style: italic;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.btn-text {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ELEMENTS CLASSES */
+
+.img-presentation {
+  width: 100%;
+  height: 50%;
+}
+
+.hyperlink {
+  text-shadow: 1px 0.5px rgb(136, 136, 136);
+  color: white;
+}
+
+.hyperlink:hover {
+  color: #ffff01;
+}
+
+.btn-dark {
+  border-radius: 3px;
+  border: 2px white solid;
+  background-color: black;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  margin-left: 10px;
+}
+
+.btn {
+  width: 10%;
+  border-radius: 100%;
+  border: 1px black solid;
+  background-color: aliceblue;
 }
