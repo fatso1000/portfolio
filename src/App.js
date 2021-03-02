@@ -1,21 +1,15 @@
 import React from "react";
-// import Header from "./components/header";
+import { Link } from "react-scroll";
+import Header from "./components/header";
 import "./App.css";
 import GITHUB_LOGO from "./components/GitHub-Mark-Light-120px-plus.png";
 import LINKEDIN_LOGO from "./components/linkedin-128.png";
 import GLOBE_LOGO from "./components/globe.png";
 
 function App() {
-  // const [darkMode, setDarkMode] = React.useState(false);
-
-  // React.useEffect(() => {
-  //   darkMode
-  //     ? document.body.classList.add("dark")
-  //     : document.body.classList.remove("dark");
-  // }, [darkMode]);
-
   return (
     <>
+      <Header />
       <div className="fullsize">
         {/* <Header /> */}
         <div className="container">
@@ -24,15 +18,20 @@ function App() {
             <p className="subtitle">by Matias</p>
           </div>
           <div className="container-2">
-            <a href="http://corndog.io/" className="btn-text">
-              {/* <img src="chevron-down-solid.svg" alt="scroll down button" /> */}
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="btn-text"
+            >
               <p className="arrow-down">&#5167;</p>
               Scroll
-            </a>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="fullsize">
+      {/* ABOUT */}
+      <div className="fullsize" id="about">
         <div className="container">
           <div className="presentation">
             <h1 className="title">WHO I AM</h1>
@@ -48,7 +47,7 @@ function App() {
               </bold>
               .
             </p>
-            <div className="list__social">
+            <div className="list__social align-left">
               <div className="list__social-content">
                 <a
                   href="https://www.linkedin.com/in/matias-benitez81/"
@@ -61,12 +60,6 @@ function App() {
                     alt="linkedin logo"
                   ></img>
                 </a>
-                {/* <button
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="btn-dark"
-                >
-                  Dark Mode
-                </button> */}
               </div>
               <div className="list__social-content">
                 <a
@@ -85,21 +78,94 @@ function App() {
           </div>
         </div>
       </div>
+      {/* SKILLS */}
+      <div className="fullsize" id="skills">
+        <div className="container">
+          <div className="presentation-projects presentation">
+            <h1 className="title">SKILLS</h1>
+            <div className="content-bg margin">
+              <div className="list__skills">
+                <div className="list__skills-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>Javascript</bold>
+                  </p>
+                </div>
+                <div className="skills__container box-sizing">
+                  <div className="skills javascript">
+                    <bold>100%</bold>
+                  </div>
+                </div>
+              </div>
+              <div className="list__skills">
+                <div className="list__skills-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>Typescript</bold>
+                  </p>
+                </div>
+                <div className="skills__container box-sizing">
+                  <div className="skills typescript">
+                    <bold>50%</bold>
+                  </div>
+                </div>
+              </div>
+              <div className="list__skills">
+                <div className="list__skills-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>React</bold>
+                  </p>
+                </div>
+                <div className="skills__container box-sizing">
+                  <div className="skills react">
+                    <bold>70%</bold>
+                  </div>
+                </div>
+              </div>
+              <div className="list__skills">
+                <div className="list__skills-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>NodeJs</bold>
+                  </p>
+                </div>
+                <div className="skills__container box-sizing">
+                  <div className="skills nodejs">
+                    <bold>80%</bold>
+                  </div>
+                </div>
+              </div>
+              <div className="list__skills">
+                <div className="list__skills-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>API</bold>
+                  </p>
+                </div>
+                <div className="skills__container box-sizing">
+                  <div className="skills javascript">
+                    <bold>100%</bold>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* PROJECTS */}
-      <div className="fullsize">
+      <div className="fullsize" id="projects">
         <div className="container">
           <div className="presentation-projects">
-            <h1 className="title">MY PROJECTS</h1>
-            <div className="black">
-              <br />
-            </div>
-            <div className="list-container">
-              <div className="list__social padding">
+            <h1 className="title">PROJECTS</h1>
+            <div className="list-container content-bg margin">
+              <div className="list__social">
                 <div className="list__social-content">
-                  <p>XKCD</p>
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>XKCD</bold>
+                  </p>
                 </div>
                 <div className="list__social-content">
-                  <a href="https://github.com/fatso1000/xkcd-react">
+                  <a
+                    href="https://github.com/fatso1000/xkcd-react"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       className="list__social-img"
                       src={GITHUB_LOGO}
@@ -108,7 +174,11 @@ function App() {
                   </a>
                 </div>
                 <div className="list__social-content">
-                  <a href="https://xkcd-heroku.herokuapp.com/">
+                  <a
+                    href="https://xkcd-heroku.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       className="list__social-img"
                       src={GLOBE_LOGO}
@@ -117,40 +187,72 @@ function App() {
                   </a>
                 </div>
               </div>
-              {/* <ul>
-                <li>
-                  <a className="subtitle">
-                    <bold>xkcd project</bold> - Front-end project
-                  </a>
-                </li>
-                <li>
-                  <p className="subtitle">
-                    <bold>jodapp project</bold> - Back-end project
-                  </p>
-                </li>
-              </ul> */}
             </div>
-          </div>
-        </div>
-      </div>
-      {/* ABOUT */}
-      <div className="fullsize">
-        <div className="container">
-          <div className="presentation-projects">
-            <h1 className="title">MY PROJECTS</h1>
-            <div className="list-container">
-              <ul>
-                <li>
-                  <p className="subtitle">
-                    <bold>xkcd project</bold> - Front-end project
+            <div className="list-container content-bg margin">
+              <div className="list__social">
+                <div className="list__social-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>Henry project</bold>
                   </p>
-                </li>
-                <li>
-                  <p className="subtitle">
-                    <bold>jodapp project</bold> - Back-end project
+                </div>
+                <div className="list__social-content">
+                  <a
+                    href="https://github.com/fatso1000/individual-project-henry"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="list__social-img"
+                      src={GITHUB_LOGO}
+                      alt="github logo"
+                    ></img>
+                  </a>
+                </div>
+                <div className="list__social-content">
+                  <a
+                    href="https://pi-videogames.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="list__social-img"
+                      src={GLOBE_LOGO}
+                      alt="globe logo"
+                    ></img>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="list-container content-bg margin">
+              <div className="list__social">
+                <div className="list__social-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>Library Online</bold>
                   </p>
-                </li>
-              </ul>
+                </div>
+                <div className="list__social-content">
+                  <a
+                    href="https://github.com/fatso1000/biblioteca-virtual"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="list__social-img"
+                      src={GITHUB_LOGO}
+                      alt="github logo"
+                    ></img>
+                  </a>
+                </div>
+                <div className="list__social-content">
+                  <div>
+                    <img
+                      className="list__social-img disabled"
+                      src={GLOBE_LOGO}
+                      alt="globe logo"
+                    ></img>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

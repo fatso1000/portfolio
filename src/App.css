@@ -5,52 +5,39 @@ bold {
 
 .arrow-down {
   font-size: 55px;
-  
-    
   transform: scale(1.5, 0.7);
   text-align: center;
   margin: 0;
 }
 
-/* SCROLL BAR
-*::-webkit-scrollbar {
-  width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-  background: black;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 20px;
-  border: 3px solid orange;
-} */
-
 /* LIST PROJECTS */
 .list__projects {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   flex-direction: column;
-}
-.list__projects-content {
 }
 
 /* RANDOM */
-.black {
-  background-color: black;
+.margin {
+  margin-top: 15px;
 }
-.social-black {
-  background-color: black;
+.margin-0 {
+  margin: 0;
 }
-.padding {
-  padding-top: 15px;
+.no-italic {
+  font-style: normal !important;
+}
+.disabled {
+  opacity: 0.5;
+}
+.align-left {
+  justify-content: left !important;
 }
 
 /* ETC */
 .list__social {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   flex-direction: row;
 }
 
@@ -58,12 +45,19 @@ bold {
   width: 35px;
   height: 35px;
   margin: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list__social-img {
   width: 35px;
   height: 35px;
-  
+}
+
+.content-bg {
+  background-color: #374045;
+  color: #e1d89f;
 }
 
 /* GENERAL CLASSES */
@@ -81,8 +75,6 @@ bold {
 }
 
 .list-container {
-  /* background-color: black; */
-  /* color: white; */
   padding: 10px;
 }
 
@@ -94,10 +86,8 @@ bold {
 .presentation .subtitle,
 .presentation .subtitle {
   color: #e1d89f;
-  
 }
 .presentation .title {
-  /* color: #e45826; */
   color: #d89216;
 }
 
@@ -105,8 +95,6 @@ bold {
   width: 75%;
   padding: 20px 12.53%;
 }
-
-/* ETC */
 
 /* TEXT CLASSES */
 .title {
@@ -131,6 +119,7 @@ bold {
   font-weight: bold;
   color: #f0a500;
   position: absolute;
+  cursor: pointer;
   bottom: 20px;
   z-index: 2;
   display: inline-block;
@@ -152,17 +141,53 @@ bold {
   color: #2c061f;
 }
 
-.btn-dark {
-  border-radius: 3px;
-  border: 2px white solid;
-  background-color: black;
-  font-family: "Ubuntu", sans-serif;
-  color: white;
+/* SKILLS */
+.skills__container {
+  width: 100%;
+  background-color: #2c061f;
 }
 
-.btn {
-  width: 10%;
-  border-radius: 100%;
-  border: 1px black solid;
-  background-color: aliceblue;
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.list__skills {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.list__skills-content {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.box-sizing {
+  box-sizing: border-box;
+}
+
+.javascript {
+  width: 100%;
+  background-color: #d89216;
+}
+
+.typescript {
+  width: 50%;
+  background-color: #d89216;
+}
+.react {
+  width: 70%;
+  background-color: #d89216;
+}
+.nodejs {
+  width: 80%;
+  background-color: #d89216;
 }
