@@ -3,6 +3,14 @@ bold {
   font-weight: bolder;
 }
 
+.arrow-down {
+  font-size: 55px;
+  
+    
+  transform: scale(1.5, 0.7);
+  text-align: center;
+  margin: 0;
+}
 
 /* SCROLL BAR
 *::-webkit-scrollbar {
@@ -26,7 +34,17 @@ bold {
   flex-direction: column;
 }
 .list__projects-content {
-  
+}
+
+/* RANDOM */
+.black {
+  background-color: black;
+}
+.social-black {
+  background-color: black;
+}
+.padding {
+  padding-top: 15px;
 }
 
 /* ETC */
@@ -45,6 +63,7 @@ bold {
 .list__social-img {
   width: 35px;
   height: 35px;
+  
 }
 
 /* GENERAL CLASSES */
@@ -62,22 +81,24 @@ bold {
 }
 
 .list-container {
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  /* color: white; */
   padding: 10px;
 }
 
 .presentation {
   width: 75%;
-  background-color: black;
+  background-color: #374045;
   padding: 20px 12.53%;
 }
 .presentation .subtitle,
 .presentation .subtitle {
-  color: white;
+  color: #e1d89f;
+  
 }
 .presentation .title {
-  color: white;
+  /* color: #e45826; */
+  color: #d89216;
 }
 
 .presentation-projects {
@@ -93,6 +114,7 @@ bold {
   margin-bottom: 0;
   letter-spacing: 0.03em;
   margin-top: 0;
+  color: #d89216;
 }
 
 .subtitle {
@@ -100,13 +122,14 @@ bold {
   font-style: italic;
   margin-left: 10px;
   margin-top: 0;
+  color: #e1d89f;
 }
 
 .btn-text {
   font-family: "Ubuntu Mono", monospace;
   font-size: 1em;
   font-weight: bold;
-  color: black;
+  color: #f0a500;
   position: absolute;
   bottom: 20px;
   z-index: 2;
@@ -122,12 +145,11 @@ bold {
 }
 
 .hyperlink {
-  text-shadow: 1px 0.5px rgb(136, 136, 136);
-  color: white;
+  color: #d89216;
 }
 
 .hyperlink:hover {
-  color: #ffff01;
+  color: #2c061f;
 }
 
 .btn-dark {
@@ -136,7 +158,6 @@ bold {
   background-color: black;
   font-family: "Ubuntu", sans-serif;
   color: white;
-  
 }
 
 .btn {

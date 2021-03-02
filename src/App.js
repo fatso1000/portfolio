@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import GITHUB_LOGO from "./components/GitHub-Mark-Light-120px-plus.png";
 import LINKEDIN_LOGO from "./components/linkedin-128.png";
+import GLOBE_LOGO from "./components/globe.png";
 
 function App() {
   // const [darkMode, setDarkMode] = React.useState(false);
@@ -24,7 +25,8 @@ function App() {
           </div>
           <div className="container-2">
             <a href="http://corndog.io/" className="btn-text">
-              <img src="chevron-down-solid.svg" alt="scroll down button" />
+              {/* <img src="chevron-down-solid.svg" alt="scroll down button" /> */}
+              <p className="arrow-down">&#5167;</p>
               Scroll
             </a>
           </div>
@@ -48,7 +50,11 @@ function App() {
             </p>
             <div className="list__social">
               <div className="list__social-content">
-                <a href="https://www.linkedin.com/in/matias-benitez81/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/matias-benitez81/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="list__social-img"
                     src={LINKEDIN_LOGO}
@@ -63,7 +69,11 @@ function App() {
                 </button> */}
               </div>
               <div className="list__social-content">
-                <a href="https://github.com/fatso1000" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/fatso1000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="list__social-img"
                     src={GITHUB_LOGO}
@@ -80,9 +90,32 @@ function App() {
         <div className="container">
           <div className="presentation-projects">
             <h1 className="title">MY PROJECTS</h1>
+            <div className="black">
+              <br />
+            </div>
             <div className="list-container">
-              <div className="">
-
+              <div className="list__social padding">
+                <div className="list__social-content">
+                  <p>XKCD</p>
+                </div>
+                <div className="list__social-content">
+                  <a href="https://github.com/fatso1000/xkcd-react">
+                    <img
+                      className="list__social-img"
+                      src={GITHUB_LOGO}
+                      alt="github logo"
+                    ></img>
+                  </a>
+                </div>
+                <div className="list__social-content">
+                  <a href="https://xkcd-heroku.herokuapp.com/">
+                    <img
+                      className="list__social-img"
+                      src={GLOBE_LOGO}
+                      alt="globe logo"
+                    ></img>
+                  </a>
+                </div>
               </div>
               {/* <ul>
                 <li>
