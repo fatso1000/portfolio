@@ -18,12 +18,7 @@ function App() {
             <p className="subtitle">by Matias</p>
           </div>
           <div className="container-2">
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              className="btn-text"
-            >
+            <Link to="about" smooth={true} duration={500} className="btn-text">
               <p className="arrow-down">&#5167;</p>
               Scroll
             </Link>
@@ -257,23 +252,20 @@ function App() {
           </div>
         </div>
       </div>
-
-
       {/* CONTACT */}
       <div className="fullsize" id="contact">
         <div className="container">
           <div className="presentation">
-            <h1 className="title">
-              CONTACT
-            </h1>
-            <p className="subtitle">
+            <h1 className="title">CONTACT</h1>
+            <p className="subtitle margin-0">
               <bold>agustinbenitez81@gmail.com</bold>
             </p>
+            <p className="subtitle margin-0">+54 11 5829-8399</p>
+            <p className="subtitle margin-0">@mati.css</p>
           </div>
         </div>
       </div>
     </>
-
   );
 }
 
