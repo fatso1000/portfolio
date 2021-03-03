@@ -257,7 +257,23 @@ function App() {
           </div>
         </div>
       </div>
+
+
+      {/* CONTACT */}
+      <div className="fullsize" id="contact">
+        <div className="container">
+          <div className="presentation">
+            <h1 className="title">
+              CONTACT
+            </h1>
+            <p className="subtitle">
+              <bold>agustinbenitez81@gmail.com</bold>
+            </p>
+          </div>
+        </div>
+      </div>
     </>
+
   );
 }
 
