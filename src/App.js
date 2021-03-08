@@ -205,7 +205,7 @@ function App() {
                 </div>
                 <div className="list__social-content">
                   <a
-                    href="https://pi-videogames.netlify.app/"
+                    href="https://pi-videogames.herokuapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -228,6 +228,37 @@ function App() {
                 <div className="list__social-content">
                   <a
                     href="https://github.com/fatso1000/biblioteca-virtual"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="list__social-img"
+                      src={GITHUB_LOGO}
+                      alt="github logo"
+                    ></img>
+                  </a>
+                </div>
+                <div className="list__social-content">
+                  <div>
+                    <img
+                      className="list__social-img disabled"
+                      src={GLOBE_LOGO}
+                      alt="globe logo"
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="list-container content-bg margin">
+              <div className="list__social">
+                <div className="list__social-content">
+                  <p className="subtitle margin-0 no-italic">
+                    <bold>Portfolio</bold>
+                  </p>
+                </div>
+                <div className="list__social-content">
+                  <a
+                    href="https://github.com/fatso1000/portfolio"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
