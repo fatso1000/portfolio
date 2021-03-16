@@ -227,7 +227,7 @@ function App() {
                 </div>
                 <div className="list__social-content">
                   <a
-                    href="https://github.com/fatso1000/biblioteca-virtual"
+                    href="https://github.com/fatso1000/e-library.git"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
